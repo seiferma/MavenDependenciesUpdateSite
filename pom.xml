@@ -28,15 +28,13 @@
 							<goal>site</goal>
 						</goals>
 						<configuration>
-							<additionalArgs>-consoleLog -debug -verbose -categoryQualifier externals_maven</additionalArgs>
-							<categoryFileURL>${project.basedir}/category.xml</categoryFileURL>
 							<featureDefinitions>
 								<feature>
 									<id>edu.kit.ipd.sdq.dataflow.privacy.externals.jpl</id>
 									<version>${jpl.version}</version>
 									<label>JPL</label>
 									<providerName>${project.groupId}</providerName>
-									<description>${project.description}</description>
+									<description>Java inerface for SWI Prolog</description>
 									<copyright>
 Copyright (c) 2003 Paul Singleton. All rights reserved.
 Copyright (c) 1998 Fred Dushin. All rights reserved.
@@ -524,7 +522,6 @@ Ty Coon, President of Vice
 
 That's all there is to it!
 									</license>
-									<generateSourceFeature>false</generateSourceFeature>
 									<artifacts>
 										<artifact>
 											<id>jpl:jpl:${jpl.version}</id>

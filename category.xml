@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-
-    <category-def name="all-features" label="Maven Features"/>
+    <category-def name="all" label="Maven osgi-bundles"/>
+    <iu>
+        <category name="all"/>
+        <query>
+            <expression type="match">providedCapabilities.exists(p | p.namespace == 'osgi.bundle')</expression>
+        </query>
+    </iu>
+    <category-def name="all-features" label="Maven osgi-features"/>
     <iu>
         <category name="all-features"/>
         <query>
             <expression type="match">providedCapabilities.exists(p | p.namespace == 'org.eclipse.update.feature')</expression>
         </query>
-	</iu>
-
+    </iu>
 </site>
